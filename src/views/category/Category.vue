@@ -1,7 +1,10 @@
 <template>
   <div class="wrapper">
+    <button @click="btnClick">按钮</button>
+
+    <div @click="divClick">嘎嘎嘎</div>
+
     <ul class="content">
-      <button @click="btnClick">按钮</button>
       <li>嘿嘿1</li>
       <li>嘿嘿2</li>
       <li>嘿嘿3</li>
@@ -119,7 +122,7 @@ export default {
   mounted() {
     this.scroll= new BScroll(document.querySelector('.wrapper'),{
       probeType:3,
-      pullUpLoad:true
+      pullUpLoad:true,
     })
 
     this.scroll.on('scroll',(position) => {
