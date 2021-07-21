@@ -8,8 +8,7 @@
       <span
         :style="{ backgroundColor: goods.discountBgColor }"
         class="discount"
-        v-if="goods.discount"
-      >
+        v-if="goods.discount">
         {{ goods.discount }}
       </span>
     </div>
@@ -25,7 +24,7 @@
         v-for="index in goods.services.length - 1"
         v-if="goods.services[index - 1].icon"
       >
-        <img :src="goods.services[index - 1].icon" alt="" />
+        <img :src="goods.services[index - 1].icon" alt=""/>
         <span>{{ goods.services[index - 1].name }}</span>
       </span>
     </div>

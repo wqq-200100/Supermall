@@ -39,7 +39,7 @@ import Scroll from '@/components/common/scroll/Scroll'
 import BackTop from "@/components/content/backTop/BackTop";
 
 import {getHomeMultidata, getHomeGoods} from "@/network/home";
-import {debounce} from "@/components/common/utils";
+import {debounce} from "@/common/utils";
 
 export default {
   name: "Home",
